@@ -14,6 +14,32 @@ public class MASAHARU extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        int jflag=0;
+        int y_count=0;
+        int y_temp=0;
+        int y_lt=0;
+        int y = getY();
+        int x = getX();
+        
+        while(jflag == 0)
+        {
+            if( Greenfoot.isKeyDown( "space" ) )
+            {
+                jflag = 1;
+                y_lt = y;
+                y -= 10;
+            }
+            if(jflag==1)
+            {
+                y_temp = y;
+                y += (y-y_lt)+1;
+                y_lt = y_temp;
+                if(y==360)
+                {
+                    jflag = 0;
+                }
+                setLocation(x,y);
+            }
+        }
     }    
 }
