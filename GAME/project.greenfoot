@@ -2,8 +2,8 @@
 class.MASAHARU.image=masaharu2.png
 editor.fx.0.height=739
 editor.fx.0.width=816
-editor.fx.0.x=133
-editor.fx.0.y=125
+editor.fx.0.x=117
+editor.fx.0.y=46
 height=585
 package.numDependencies=0
 package.numTargets=2
@@ -38,10 +38,5 @@ target2.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=59
-yPosition=419
-=======
-xPosition=1081
-yPosition=14
->>>>>>> 155d8fac24213255a53aa20249b66400b8a3199d
+xPosition=36
+yPosition=398

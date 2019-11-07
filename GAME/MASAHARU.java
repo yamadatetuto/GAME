@@ -14,6 +14,19 @@ public class MASAHARU extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        int x = getX();
+        int y = getY();
+        getImage().scale( 80, 80 );
+        if( Greenfoot.isKeyDown( "right" ) ){
+        //setRotation(0);
+        setLocation(x-1,y);
+        move(3);
+        }
+        if( Greenfoot.isKeyDown( "left" ) ){    
+        //setRotation(270);
+        setLocation(x+1,y);
+        move(-3);
+        }
+        
     }    
 }
