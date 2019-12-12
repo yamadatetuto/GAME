@@ -1,9 +1,10 @@
 #Greenfoot project file
 class.MASAHARU.image=masaharu2.png
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=912
-editor.fx.0.y=122
+class.MyWorld.image=game_center.png
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=585
 package.numDependencies=0
 package.numTargets=2
@@ -38,5 +39,5 @@ target2.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
-xPosition=165
-yPosition=234
+xPosition=201
+yPosition=203
