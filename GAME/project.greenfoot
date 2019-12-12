@@ -1,5 +1,9 @@
 #Greenfoot project file
 class.MASAHARU.image=masaharu2.png
+class.WorldStage1.image=bathroom-tile.jpg
+class.WorldStage2.image=bluerock.jpg
+class.WorldStage3.image=board.jpg
+class.WorldStage4.image=bricks1.jpg
 dependency1.from=WorldStage2
 dependency1.to=WorldStage3
 dependency1.type=UsesDependency
@@ -68,5 +72,5 @@ target5.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=WorldStage1
-xPosition=73
-yPosition=356
+xPosition=89
+yPosition=304
