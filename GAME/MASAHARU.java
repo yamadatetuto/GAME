@@ -22,9 +22,16 @@ public class MASAHARU extends Actor
         int x = getX();
         
         getImage().scale( 80, 80 );
+        if( Greenfoot.isKeyDown( "right" ) ){
+            setLocation(x-1,y);
+            move(3);
+        }
+        if( Greenfoot.isKeyDown( "left" ) ){   
+            setLocation(x+1,y);
+            move(-3);
+        }
         
-        while(jflag == 0)
-        {
+        
             if( Greenfoot.isKeyDown( "space" ) )
             {
                 jflag = 1;
@@ -42,16 +49,10 @@ public class MASAHARU extends Actor
                 }
                 setLocation(x,y);
             }
-        }
-        
-        if( Greenfoot.isKeyDown( "right" ) ){
-            setLocation(x-1,y);
-            move(3);
-        }
-        if( Greenfoot.isKeyDown( "left" ) ){   
-            setLocation(x+1,y);
-            move(-3);
-        }
+            
+            
+      
+            
         
     }    
 }
