@@ -20,7 +20,7 @@ public class WorldStage2 extends World
     }
     public void act()
     {
-        if( Greenfoot.isKeyDown( "up" ) ){
+        if( Greenfoot.isKeyDown( "2" ) ){
         World game = new WorldStage3();
         Greenfoot.setWorld( game );
     }
