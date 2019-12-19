@@ -28,7 +28,7 @@ public class MASAHARU extends Actor
             y_temp = y;
             y += (y-y_prev)+1;
             y_prev = y_temp;
-            if(y==200){
+            if(y>=200){
                 jflag = false;
             }
         }
