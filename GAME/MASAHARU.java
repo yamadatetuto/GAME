@@ -18,6 +18,7 @@ public class MASAHARU extends Actor
      */
     public void act() 
     {
+        
         int x = getX();
         int y = getY();
         
@@ -48,6 +49,17 @@ public class MASAHARU extends Actor
             setLocation(x+1,y);
             move(-3);
         }
+
+        if( Greenfoot.isKeyDown( "right" ) ){
+            setLocation(x-1,y);
+            move(3);
+        }
+        if( Greenfoot.isKeyDown( "left" ) ){   
+            setLocation(x+1,y);
+            move(-3);
+        }
+        
+        
         
     }    
 }

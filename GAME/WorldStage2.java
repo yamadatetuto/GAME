@@ -1,32 +1,29 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Write a description of class WorldStage2 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class WorldStage2 extends World
 {
-    MASAHARU masaharu = null;
 
     /**
-     * Constructor for objects of class MyWorld.
+     * Constructor for objects of class WorldStage2.
      * 
      */
-    public MyWorld()
+    public WorldStage2()
     {    
-        
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        
-        masaharu = new MASAHARU();
-        addObject( masaharu, 300, 200 );
-        
     }
-    
     public void act()
     {
-        showText( "my="+masaharu.my, 100, 100 );
+        if( Greenfoot.isKeyDown( "3" ) ){
+        World game = new WorldStage3();
+        Greenfoot.setWorld( game );
+    }
+        
     }
 }
