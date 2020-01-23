@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class WorldStage2 extends World
 {
+    MASAHARU masaharu = null;
 
     /**
      * Constructor for objects of class WorldStage2.
@@ -17,6 +18,8 @@ public class WorldStage2 extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        masaharu = new MASAHARU();
+        addObject( masaharu, 70, 50 );
     }
     public void act()
     {

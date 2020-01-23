@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.HashMap;
 
 /**
  * Write a description of class MASAHARU here.
@@ -16,13 +17,23 @@ public class MASAHARU extends Actor
      * Act - do whatever the MASAHARU wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    HashMap<String,GreenfootImage> imgmap = new HashMap<String,GreenfootImage>();
+    public MASAHARU(){
+        imgmap.put("left",new GreenfootImage( "M_left.png" ));
+        imgmap.put("right",new GreenfootImage( "M_right.png" ));
+        imgmap.get("left").scale(80,80);
+        imgmap.get("right").scale(80,80);
+        setImage(imgmap.get("right")); 
+    }
     public void act() 
     {
+        /*
+         * 最初にgitBashで共有する
+         */
         
         int x = getX();
         int y = getY();
-        
-        getImage().scale( 80, 80 );
         
         if(jflag==true){
             y_temp = y;
@@ -40,16 +51,19 @@ public class MASAHARU extends Actor
         }
         
         setLocation(x,y);
-            
+        
         if( Greenfoot.isKeyDown( "right" ) ){
+            setImage(imgmap.get("right")); 
             setLocation(x-1,y);
             move(3);
         }
         if( Greenfoot.isKeyDown( "left" ) ){   
+            setImage(imgmap.get("left")); 
             setLocation(x+1,y);
             move(-3);
         }
 
+<<<<<<< HEAD
         if( Greenfoot.isKeyDown( "right" ) ){
             setLocation(x-1,y);
             move(3);
@@ -76,5 +90,11 @@ public class MASAHARU extends Actor
         
 
 
+=======
+        
+        if(x>=599){
+            getWorld().showText( "GAME OVER", 300, 150 );
+        }
+>>>>>>> 5c3a28e9010a81f5c67708086e648a01c23bdbe0
         
     }    
