@@ -79,16 +79,16 @@ public class MASAHARU extends Actor
                 World world;
 
                 world = getWorld();
+                
 
-                world.removeObject(block);
+                //world.removeObject(block);
                 
             }
-            
-            
-}}
+           
+    }
             
         
-
+}
 
 
     
