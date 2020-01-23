@@ -27,6 +27,5 @@ public class WorldStage4 extends World
     
     public void act()
     {
-        showText( "my="+masaharu.my, 100, 100 );
     }
 }

@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.MASAHARU.image=masaharu2.png
+class.MASAHARU.image=M_right.png
 class.WorldStage1.image=youkan000.png
 class.WorldStage2.image=ekimae_night01.png
 class.WorldStage3.image=tosi_haikyo00.png
@@ -8,20 +8,32 @@ dependency1.from=WorldStage4
 dependency1.to=MASAHARU
 dependency1.type=UsesDependency
 dependency2.from=WorldStage2
-dependency2.to=WorldStage3
+dependency2.to=MASAHARU
 dependency2.type=UsesDependency
-dependency3.from=WorldStage3
-dependency3.to=WorldStage4
+dependency3.from=WorldStage2
+dependency3.to=WorldStage3
 dependency3.type=UsesDependency
-dependency4.from=WorldStage1
-dependency4.to=WorldStage2
+dependency4.from=WorldStage3
+dependency4.to=MASAHARU
 dependency4.type=UsesDependency
+<<<<<<< HEAD
+=======
+dependency5.from=WorldStage3
+dependency5.to=WorldStage4
+dependency5.type=UsesDependency
+dependency6.from=WorldStage1
+dependency6.to=MASAHARU
+dependency6.type=UsesDependency
+dependency7.from=WorldStage1
+dependency7.to=WorldStage2
+dependency7.type=UsesDependency
+>>>>>>> 5c3a28e9010a81f5c67708086e648a01c23bdbe0
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=585
-package.numDependencies=4
+package.numDependencies=7
 package.numTargets=5
 project.charset=UTF-8
 publish.hasSource=false
@@ -36,7 +48,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=50
+simulation.speed=51
 target1.height=50
 target1.name=WorldStage4
 target1.showInterface=false
@@ -75,5 +87,10 @@ target5.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=WorldStage1
+<<<<<<< HEAD
 xPosition=277
 yPosition=276
+=======
+xPosition=920
+yPosition=111
+>>>>>>> 5c3a28e9010a81f5c67708086e648a01c23bdbe0
