@@ -58,44 +58,19 @@ public class MASAHARU extends Actor
             setLocation(x+1,y);
             move(-3);
         }
-        
-        
-
-            if( Greenfoot.isKeyDown( "space" ) )
-            {
-                jflag = 1;
-                y_lt = y;
-                y -= 10;
-            }
-
-            if(jflag==1)
-            {
-                y_temp = y;
-                y += (y-y_lt)+10;
-                y_lt = y_temp;
-                if(y==360)
-                {
-                    jflag = 0;
-                }
-            }
-            if( Greenfoot.isKeyDown( "space" ) && jflag==0 )
-            {
-                jflag = 1;
-                y_lt = y;
-                y -= 10;
-                setLocation(x,y);
-            }
-            
-            Actor block;
+        Actor block;
             block = getOneObjectAtOffset(0, 0, block.class);
-            if (block != null){
+       if (block != null){
 
                 World world;
 
                 world = getWorld();
 
                 world.removeObject(block);
+                
             }
+            
+            
 }
             
         
