@@ -30,10 +30,9 @@ public class WorldStage4 extends World
     
     public void act()
     {
-<<<<<<< HEAD
+
         showText( "my="+masaharu.my, 100, 100 );
 
-=======
->>>>>>> 5c3a28e9010a81f5c67708086e648a01c23bdbe0
+
     }
 }

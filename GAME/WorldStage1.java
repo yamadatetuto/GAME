@@ -18,19 +18,13 @@ public class WorldStage1 extends World
     {    
         
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-<<<<<<< HEAD
-        super(600, 400, 1);
-        addObject( new block(), 100, 200 );
-        addObject( new block(), 100, 230 );
-        addObject( new block(), 100, 260 );
-        addObject( new block(), 200, 200 );
-        addObject( new block(), 230, 200 );
-        addObject( new block(), 260, 200 );
-=======
+
+       
+
         super(600, 400, 1); 
         masaharu = new MASAHARU();
         addObject( masaharu, 300, 200 );
->>>>>>> 5c3a28e9010a81f5c67708086e648a01c23bdbe0
+
     }
     public void act()
     {

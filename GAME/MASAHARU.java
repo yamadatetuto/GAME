@@ -63,7 +63,7 @@ public class MASAHARU extends Actor
             move(-3);
         }
 
-<<<<<<< HEAD
+
         if( Greenfoot.isKeyDown( "right" ) ){
             setLocation(x-1,y);
             move(3);
@@ -85,16 +85,10 @@ public class MASAHARU extends Actor
             }
             
             
-}
+}}
             
         
 
 
-=======
-        
-        if(x>=599){
-            getWorld().showText( "GAME OVER", 300, 150 );
-        }
->>>>>>> 5c3a28e9010a81f5c67708086e648a01c23bdbe0
-        
-    }    
+
+    
