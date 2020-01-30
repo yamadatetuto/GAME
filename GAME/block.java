@@ -14,7 +14,20 @@ public class block extends Actor
      */
     public void act() 
     {
-        
+        int x = getX();
+            int y = getY();
+        Actor MASAHARU;
+            MASAHARU = getOneObjectAtOffset(0, 0, MASAHARU.class);
+       if (MASAHARU != null){
+
+                World world;
+
+                world = getWorld();
+                
+                
+              
+                
+            }
             
     }    
 }

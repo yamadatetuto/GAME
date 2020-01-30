@@ -27,6 +27,7 @@ public class WorldStage1 extends World
         addObject( new block(), 400, 225 );
         addObject( new block(), 450, 180 );
         addObject( new block(), 500, 150 );
+        addObject( new block(), 420, 200);
     }
     public void act()
     {

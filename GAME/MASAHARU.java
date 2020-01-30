@@ -72,23 +72,25 @@ public class MASAHARU extends Actor
             setLocation(x+1,y);
             move(-3);
         }
-        Actor block;
+        
+            Actor block;
             block = getOneObjectAtOffset(0, 0, block.class);
        if (block != null){
 
-                World world;
+             World world;
 
-                world = getWorld();
+              world = getWorld();   
+             setLocation(x-1,y);
+            move(3);
+        }
                 
-
-                //world.removeObject(block);
+              
                 
             }
-           
     }
             
         
-}
+
 
 
     
