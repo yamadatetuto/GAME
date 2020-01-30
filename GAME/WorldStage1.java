@@ -20,7 +20,7 @@ public class WorldStage1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         masaharu = new MASAHARU();
-        addObject( masaharu, 300, 200 );
+        addObject( masaharu, 300, 350 );
     }
     public void act()
     {
