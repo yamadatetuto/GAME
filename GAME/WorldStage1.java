@@ -20,11 +20,11 @@ public class WorldStage1 extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         masaharu = new MASAHARU();
-        addObject( masaharu, 300, 200 );
+        addObject( masaharu, 0, 200 );
     }
     public void act()
     {
-        if( Greenfoot.isKeyDown( "1" ) ){
+        if( Greenfoot.isKeyDown("1") ){
         World game = new WorldStage2();
         Greenfoot.setWorld( game );
        }
