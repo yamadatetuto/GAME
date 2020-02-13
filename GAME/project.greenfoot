@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.MASAHARU.image=masaharu2.png
+class.MASAHARU.image=M_right.png
 class.WorldStage1.image=youkan000.png
 class.WorldStage2.image=ekimae_night01.png
 class.WorldStage3.image=tosi_haikyo00.png
@@ -52,7 +52,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=50
+simulation.speed=51
 target1.height=50
 target1.name=WorldStage4
 target1.showInterface=false
@@ -98,5 +98,10 @@ target6.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=WorldStage1
+<<<<<<< HEAD
+xPosition=0
+yPosition=162
+=======
 xPosition=973
 yPosition=43
+>>>>>>> 6cd3ca05a280135f32234f067f7a079f62cf5d97

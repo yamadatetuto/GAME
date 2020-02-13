@@ -23,6 +23,9 @@ public class WorldStage1 extends World
 
         super(600, 400, 1); 
         masaharu = new MASAHARU();
+<<<<<<< HEAD
+        addObject( masaharu, 0, 200 );
+=======
         addObject( masaharu, 300, 350 );
         addObject( masaharu, 300, 200 );
         addObject( new block(), 400, 225 );
@@ -30,10 +33,11 @@ public class WorldStage1 extends World
         addObject( new block(), 500, 150 );
         addObject( new block(), 420, 200);
 
+>>>>>>> 6cd3ca05a280135f32234f067f7a079f62cf5d97
     }
     public void act()
     {
-        if( Greenfoot.isKeyDown( "1" ) ){
+        if( Greenfoot.isKeyDown("1") ){
         World game = new WorldStage2();
         Greenfoot.setWorld( game );
        }

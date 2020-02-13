@@ -13,6 +13,8 @@ public class MASAHARU extends Actor
     public boolean jflag = false;
     public int y_temp=0, y_prev=0, x_temp=0, x_prev=0;
     
+    public int x = 0;
+    public int y = 0;
     /**
      * Act - do whatever the MASAHARU wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -32,8 +34,8 @@ public class MASAHARU extends Actor
          * 最初にgitBashで共有する
          */
         
-        int x = getX();
-        int y = getY();
+        x = getX();
+        y = getY();
         
         if(jflag==true){
             y_temp = y;

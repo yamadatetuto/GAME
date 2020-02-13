@@ -23,7 +23,7 @@ public class WorldStage3 extends World
     }
     public void act()
     {
-        if( Greenfoot.isKeyDown( "3" ) ){
+        if( masaharu.x >= 599 ){
         World game = new WorldStage4();
         Greenfoot.setWorld( game );
     }
