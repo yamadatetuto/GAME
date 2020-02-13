@@ -11,7 +11,7 @@ public class MASAHARU extends Actor
 {
     public int my = 200;
     public boolean jflag = false;
-    public int y_temp=0, y_prev=0;
+    public int y_temp=0, y_prev=0, x_temp=0, x_prev=0;
     
     public int x = 0;
     public int y = 0;
@@ -41,34 +41,67 @@ public class MASAHARU extends Actor
             y_temp = y;
             y += (y-y_prev)+1;
             y_prev = y_temp;
-            if(y>=200){
+            if(y>=300){
                 jflag = false;
             }
-        }
-        
+            if(y>=280 & x>=200){
+                jflag = false;
+            }
+        }//暫定の床判定
+        Actor block;
+        block = getOneObjectAtOffset(0, 0, block.class);
         if( Greenfoot.isKeyDown( "space" ) && jflag==false){
             jflag = true;
             y_prev = y;
             y = y-10;
+                if (block != null){
+
+                    World world;
+
+                    world = getWorld();   
+                    setLocation(x,y-1);
+                    move(-10);
+                }
         }
         
         setLocation(x,y);
+            
         
         if( Greenfoot.isKeyDown( "right" ) ){
             setImage(imgmap.get("right")); 
             setLocation(x-1,y);
             move(3);
+                if (block != null){
+
+                    World world;
+
+                    world = getWorld();   
+                    setLocation(x-1,y);
+                    move(-3);
+                }
         }
         if( Greenfoot.isKeyDown( "left" ) ){   
             setImage(imgmap.get("left")); 
             setLocation(x+1,y);
             move(-3);
-        }
+                if (block != null){
 
-        
-        if(x>=599){
-            getWorld().showText( "GAME OVER", 300, 150 );
+                    World world;
+
+                    world = getWorld();   
+                    setLocation(x-1,y);
+                    move(3);
+                }
         }
+       
+                
+              
+                
+            }
+    }
+            
         
-    }    
-}
+
+
+
+    
